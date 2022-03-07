@@ -1,0 +1,14 @@
+# uses gitignore syntax.
+
+/node_modules
+/coverage
+/build
+/yarn.lock
+/shell
+/.vscode
+.browserslistrc
+Jenkinsfile
+package-lock.json
+yarn.lock
+yarn-error.log
+*.properties

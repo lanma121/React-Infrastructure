@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "noLib": false,                            // Do not include the default library file (lib.d.ts)
+    "module": "commonJS",                      // Specifies the module system, when generating module code. The values are "amd", "commonJS", "es2015", "es6", "esnext", "none", "system", "umd".
+    "moduleResolution": "node",                // Specifies how modules are resolved for imports. The values are "node" and "classic".
+    "target": "es2017",                        // Specifies which default library (lib.d.ts) to use. The values are "es3", "es5", "es6", "es2015", "es2016", "es2017", "es2018", "es2019", "es2020", "esnext".
+    "checkJs": false,	                         // Enable type checking on JavaScript files.
+    "experimentalDecorators": true,	           // Enables experimental support for proposed ES decorators.
+    "allowSyntheticDefaultImports": false,     // Allow default imports from modules with no default export. This does not affect code emit, just type checking.
+    "baseUrl": "./src",                        // Base directory to resolve non-relative module names.
+    "paths": {                                 // Specify path mapping to be computed relative to baseUrl option.
+      "@": ["./*"],
+      "components": ["components/*"],
+      "GameUi": ["components/GameUi/*"],
+      "GameUiPro": ["components/GameUiPro"]
+    },
+  },
+  "exclude": ["node_modules", "bower_components", "dist", "build", "tmp", "temp", "jspm_packages"], // 排除源码文件，以提高性能。
+  "include": ["src/**/*"],     // 仅包含include中的文件
+}
